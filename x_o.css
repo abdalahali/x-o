@@ -1,0 +1,44 @@
+.game {
+    width: 255px;  /* عرض محدد بالبكسل */
+    text-align: center;
+    font-family: system-ui;
+    color: white;
+    margin: auto;
+    font-weight: 500;
+    
+}
+
+.title {
+    background: #f25;
+    padding: 5px 1px;
+    margin: 3px;
+}
+
+span {
+    color: #fa0;
+    font-size: 25px;
+}
+
+.square {
+    width: 80px;
+    height: 80px;
+    background: #f25;
+    float: left;
+    margin: 2px;
+    font-size: 50px;
+}
+
+.square:hover {
+    background: black;
+    cursor: pointer;
+}
+
+/* From Uiverse.io by mobinkakei */ 
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
