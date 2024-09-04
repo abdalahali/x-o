@@ -7,21 +7,23 @@
     <link rel="icon" type="image/png" href="x_o.jpeg">
 </head>
 <body>
-   <div class="game">
-    <div class="title"><span>x_o</span> Game</div>
-    <div class="square" id="item1" onclick="game(this.id)"></div>
-    <div class="square" id="item2" onclick="game(this.id)"></div>
-    <div class="square" id="item3" onclick="game(this.id)"></div>
+    <div class="game">
+        <div class="title"><span>x_o</span> Game</div>
+        <div class="square" id="item1" onclick="playerMove(this.id)"></div>
+        <div class="square" id="item2" onclick="playerMove(this.id)"></div>
+        <div class="square" id="item3" onclick="playerMove(this.id)"></div>
 
-    <div class="square" id="item4" onclick="game(this.id)"></div>
-    <div class="square" id="item5" onclick="game(this.id)"></div>
-    <div class="square" id="item6" onclick="game(this.id)"></div>
+        <div class="square" id="item4" onclick="playerMove(this.id)"></div>
+        <div class="square" id="item5" onclick="playerMove(this.id)"></div>
+        <div class="square" id="item6" onclick="playerMove(this.id)"></div>
 
-    <div class="square" id="item7" onclick="game(this.id)"></div>
-    <div class="square" id="item8" onclick="game(this.id)"></div>
-    <div class="square" id="item9" onclick="game(this.id)"></div>
-
-   </div>
-   <script src="x_o.js"></script> 
+        <div class="square" id="item7" onclick="playerMove(this.id)"></div>
+        <div class="square" id="item8" onclick="playerMove(this.id)"></div>
+        <div class="square" id="item9" onclick="playerMove(this.id)"></div>
+    </div>
+    <button onclick="resetGame()" class="reset-button">إعادة اللعب</button>
+    <button onclick="toggleMode()" class="toggle-mode-button">تبديل الوضع</button>
+    <div class="mode-info">الوضع الحالي: <span id="mode">لاعب ضد لاعب</span></div>
+    <script src="x_o.js"></script> 
 </body>
 </html>
